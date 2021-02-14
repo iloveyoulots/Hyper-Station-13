@@ -15,21 +15,21 @@
 	name = "Cell-Volume Altering Base"
 	id = /datum/reagent/sizechem
 	mix_message = "the reaction rapidly alters in size!"
-	required_reagents = list(/datum/reagent/growthserum = 0.15, /datum/reagent/medicine/clonexadone = 0.15, /datum/reagent/gold = 0.15, /datum/reagent/acetone = 0.15)
-	results = list(/datum/reagent/sizechem = 0.3)
+	required_reagents = list(/datum/reagent/growthserum = 1, /datum/reagent/medicine/clonexadone = 1, /datum/reagent/acetone = 1)
+	results = list(/datum/reagent/sizechem = 3)
 	required_temp = 1
 	//Fermichem vars
-	OptimalTempMin 		= 600 		// Lower area of bell curve for determining heat based rate reactions
-	OptimalTempMax 		= 630 		// Upper end for above
-	ExplodeTemp 		= 635 		// Temperature at which reaction explodes
-	OptimalpHMin 		= 5 		// Lowest value of pH determining pH a 1 value for pH based rate reactions (Plateu phase)
-	OptimalpHMax 		= 5.5 		// Higest value for above
+	OptimalTempMin 		= 400 		// Lower area of bell curve for determining heat based rate reactions
+	OptimalTempMax 		= 650 		// Upper end for above
+	ExplodeTemp 		= 725 		// Temperature at which reaction explodes
+	OptimalpHMin 		= 4		// Lowest value of pH determining pH a 1 value for pH based rate reactions (Plateu phase)
+	OptimalpHMax 		= 8 		// Higest value for above
 	ReactpHLim 			= 2 		// How far out pH wil react, giving impurity place (Exponential phase)
 	CatalystFact 		= 0 		// How much the catalyst affects the reaction (0 = no catalyst)
 	CurveSharpT 		= 4 		// How sharp the temperature exponential curve is (to the power of value)
 	CurveSharppH 		= 4 		// How sharp the pH exponential curve is (to the power of value)
-	ThermicConstant		= -10 		// Temperature change per 1u produced
-	HIonRelease 		= 0.02 		// pH change per 1u reaction (inverse for some reason)
+	ThermicConstant		= 0 		// Temperature change per 1u produced
+	HIonRelease 		= 0 		// pH change per 1u reaction (inverse for some reason)
 	RateUpLim 			= 1 		// Optimal/max rate possible if all conditions are perfect
 	FermiChem 			= TRUE		// If the chemical uses the Fermichem reaction mechanics
 	FermiExplode 		= FALSE		// If the chemical explodes in a special way
@@ -50,19 +50,19 @@
 	name = "Prospacillin"
 	id = /datum/reagent/growthchem
 	mix_message = "the reaction appears to grow!"
-	required_reagents = list(/datum/reagent/sizechem = 0.15, /datum/reagent/consumable/condensedcapsaicin = 0.15, /datum/reagent/drug/aphrodisiac = 0.30)
-	results = list(/datum/reagent/growthchem = 0.25)
+	required_reagents = list(/datum/reagent/sizechem = 1, /datum/reagent/consumable/condensedcapsaicin = 1, /datum/reagent/drug/aphrodisiac = 2)
+	results = list(/datum/reagent/growthchem = 5)
 	required_temp = 1
-	OptimalTempMin 		= 700 		// Lower area of bell curve for determining heat based rate reactions
+	OptimalTempMin 		= 600 		// Lower area of bell curve for determining heat based rate reactions
 	OptimalTempMax 		= 730 		// Upper end for above
-	ExplodeTemp 		= 735 		// Temperature at which reaction explodes
+	ExplodeTemp 		= 750 		// Temperature at which reaction explodes
 	OptimalpHMin 		= 3 		// Lowest value of pH determining pH a 1 value for pH based rate reactions (Plateu phase)
-	OptimalpHMax 		= 3.5 		// Higest value for above
+	OptimalpHMax 		= 8 		// Higest value for above
 	ReactpHLim 			= 2 		// How far out pH wil react, giving impurity place (Exponential phase)
 	CatalystFact 		= 0 		// How much the catalyst affects the reaction (0 = no catalyst)
 	CurveSharpT 		= 4 		// How sharp the temperature exponential curve is (to the power of value)
 	CurveSharppH 		= 4 		// How sharp the pH exponential curve is (to the power of value)
-	ThermicConstant		= -10 		// Temperature change per 1u produced
+	ThermicConstant		= 0 		// Temperature change per 1u produced
 	HIonRelease 		= 0.02 		// pH change per 1u reaction (inverse for some reason)
 	RateUpLim 			= 1 		// Optimal/max rate possible if all conditions are perfect
 	FermiChem 			= TRUE		// If the chemical uses the Fermichem reaction mechanics
@@ -99,20 +99,20 @@
 	name = "Diminicillin"
 	id = /datum/reagent/shrinkchem
 	mix_message = "the reaction appears to shrink!"
-	required_reagents = list(/datum/reagent/sizechem = 0.15, /datum/reagent/consumable/frostoil = 0.15, /datum/reagent/drug = 0.30)
-	results = list(/datum/reagent/shrinkchem = 0.25)
+	required_reagents = list(/datum/reagent/sizechem = 1, /datum/reagent/consumable/frostoil = 1, /datum/reagent/drug/aphrodisiac = 2)
+	results = list(/datum/reagent/shrinkchem = 4)
 	required_temp = 1
-	OptimalTempMin 		= 100 		// Lower area of bell curve for determining heat based rate reactions
-	OptimalTempMax 		= 150 		// Upper end for above
-	ExplodeTemp 		= 350 		// Temperature at which reaction explodes
+	OptimalTempMin 		= 450 		// Lower area of bell curve for determining heat based rate reactions
+	OptimalTempMax 		= 600 		// Upper end for above
+	ExplodeTemp 		= 700 		// Temperature at which reaction explodes
 	OptimalpHMin 		= 3 		// Lowest value of pH determining pH a 1 value for pH based rate reactions (Plateu phase)
-	OptimalpHMax 		= 4.5 		// Higest value for above
+	OptimalpHMax 		= 8 		// Higest value for above
 	ReactpHLim 			= 2 		// How far out pH wil react, giving impurity place (Exponential phase)
 	CatalystFact 		= 0 		// How much the catalyst affects the reaction (0 = no catalyst)
 	CurveSharpT 		= 4 		// How sharp the temperature exponential curve is (to the power of value)
 	CurveSharppH 		= 4 		// How sharp the pH exponential curve is (to the power of value)
-	ThermicConstant		= -10 		// Temperature change per 1u produced
-	HIonRelease 		= 0.02 		// pH change per 1u reaction (inverse for some reason)
+	ThermicConstant		= 0 		// Temperature change per 1u produced
+	HIonRelease 		= 0 		// pH change per 1u reaction (inverse for some reason)
 	RateUpLim 			= 1 		// Optimal/max rate possible if all conditions are perfect
 	FermiChem 			= TRUE		// If the chemical uses the Fermichem reaction mechanics
 	FermiExplode 		= FALSE		// If the chemical explodes in a special way
